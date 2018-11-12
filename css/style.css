@@ -1,0 +1,83 @@
+main{
+	display: flex;
+	height: 100vh;
+
+}
+
+body{
+	overflow : hidden;
+}
+
+.carrousel{
+	list-style: none;
+	margin: auto;
+	width: 200px;
+	height: 200px;
+	background-color: #FFF;
+	clip-path: circle(45%);
+	padding-left:  0px;
+	
+}
+
+.carrousel li{
+	position: absolute;
+	animation: movingDofus 10s infinite;
+}
+
+.carrousel li:nth-child(2){
+	margin-left: -200px;
+}
+.carrousel li:nth-child(3){
+	margin-left:200px;
+}
+.carrousel li:nth-child(4){
+	margin-top:200px;
+}
+.carrousel li:nth-child(5){
+	margin-top:-200px;
+}
+.hidding{
+	background-color: #CCCCCC;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index:-1 ;
+
+}
+
+@keyframes movingDofus {
+	0% {
+		transform: translate(0,0);
+	}
+
+	12.5% {
+		transform: translate(-200px,0);
+	}
+
+	25%{
+		transform: translate(0px,0);
+	}
+	37.5%{
+		transform: translate(0px,-200px);
+	}
+	50%{
+		transform: translate(0px,0);
+	}
+	62.5%{
+		transform: translate(200px,0);
+	}
+	75%{
+		transform: translate(0px,0);
+	}
+	87.5%{
+		transform: translate(0px,200px);
+	}
+	100%{
+		transform: translate(0px,0);
+	}
+
+
+
+}
