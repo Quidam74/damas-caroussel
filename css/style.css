@@ -16,12 +16,13 @@ body{
 	background-color: #FFF;
 	clip-path: circle(45%);
 	padding-left:  0px;
+	animation: clicliDofus cubic-bezier(.12,.99,.31,1.01) 2.5s infinite;
 	
 }
 
 .carrousel li{
 	position: absolute;
-	animation: movingDofus 10s infinite;
+	animation: movingDofus 20s infinite;
 }
 
 .carrousel li:nth-child(2){
@@ -80,4 +81,16 @@ body{
 
 
 
+}
+
+@keyframes clicliDofus {
+	0%{
+		clip-path: circle(45%);
+	}
+	50%{
+		clip-path: circle(0%);
+	}
+	100%{
+		clip-path: circle(45%);
+	}
 }
