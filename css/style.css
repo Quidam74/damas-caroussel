@@ -48,6 +48,113 @@ body{
 
 }
 
+
+.objectif{
+	background-color: red;
+	height: 200px;
+	width: 200px;
+	position: absolute;
+	top: calc(50% - 100px);
+	left: calc(50% - 100px);
+	-webkit-animation: rotation 5s infinite linear;
+	//clip-path: circle(45%);;
+}
+
+.objectif div{
+	width: 0;
+	height: 0;
+	 border-style: solid;
+border-width:    100px 0 100px 172px;
+border-color:    transparent transparent transparent #007bff ;
+	position: absolute;
+	top: 25px;
+	display: none;
+	
+	
+}
+
+.objectif .objectif-1{
+	transform: rotate(60deg) ;
+	-webkit-transform-origin : center;
+	//-webkit-animation: spin-1 2s infinite linear;
+	animation-direction: alternate; 
+	display: block;
+
+}
+.objectif .objectif-2{
+	transform: rotate(120deg);
+}
+.objectif .objectif-3{
+	transform: rotate(180deg);
+}
+.objectif .objectif-4{
+	transform: rotate(240deg);
+}
+.objectif .objectif-5{
+	transform: rotate(300deg);
+}
+.objectif .objectif-6{
+	transform: rotate(0deg);
+}
+
+@keyframes spin-1{
+	from{
+		transform: rotate(calc(0turn + 180deg)) translate(100px,20px) ;
+	}
+	to{
+		transform: rotate(1turn) translate(100px,-20px) ;
+	}
+}
+@keyframes spin-2{
+	from{
+		transform: rotate(60deg) ;
+	}
+	to{
+		transform: rotate(359deg) ;
+	}
+}
+@keyframes spin-3{
+	from{
+		transform: rotate(60deg) ;
+	}
+	to{
+		transform: rotate(359deg) ;
+	}
+}
+@keyframes spin-4{
+	from{
+		transform: rotate(60deg) ;
+	
+	to{
+		transform: rotate(359deg) ;
+	}
+}
+@keyframes spin-5{
+	from{
+		transform: rotate(60deg) ;
+	}
+	to{
+		transform: rotate(359deg) ;
+	}
+}
+@keyframes spin-6{
+	from{
+		transform: rotate(60deg) ;
+	}
+	to{
+		transform: rotate(359deg) ;
+	}
+}
+
+@-webkit-keyframes rotation {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(359deg);
+	}
+}
+
 @keyframes movingDofus {
 	0% {
 		transform: translate(0,0);
